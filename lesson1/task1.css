@@ -1,0 +1,26 @@
+.box{
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+
+}
+
+
+.column-1{
+    background-color: pink;
+    display: flex;
+    width: 100px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-1{
+    background-color: black;
+    color: white;
+}
+
+.column-2{
+    background-color: lightblue;
+    width: 200px;
+}
