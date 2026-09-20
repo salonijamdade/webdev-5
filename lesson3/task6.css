@@ -1,0 +1,43 @@
+body {
+    height: 3000px;
+}
+
+.prod-container {
+    display: inline-block;
+    position: relative;
+}
+
+.prod-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.promotion {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    padding: 9px 13px;
+}
+
+.bottom-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.8);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-to-cart-button {
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 15px;
+}
