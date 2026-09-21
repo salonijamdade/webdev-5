@@ -1,0 +1,80 @@
+.header {
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 22px;
+}
+
+.upload-icon-container,
+.youtube-apps-icon-container,
+.notifications-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.upload-icon,
+.youtube-apps-icon,
+.notifications-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.current-user-picture {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.notifications-count {
+    position: absolute;
+    top: -5px;
+    right: -6px;
+
+    background-color: red;
+    color: white;
+
+    font-family: Arial;
+    font-size: 10px;
+
+    padding: 2px 5px;
+    border-radius: 10px;
+}
+
+.upload-icon-container .tooltip,
+.youtube-apps-icon-container .tooltip,
+.notifications-icon-container .tooltip {
+    position: absolute;
+    bottom: -35px;
+
+    background-color: gray;
+    color: white;
+
+    font-family: Arial;
+    font-size: 12px;
+
+    padding: 5px 8px;
+    border-radius: 3px;
+
+    opacity: 0;
+    pointer-events: none;
+    white-space: nowrap;
+
+    transition: opacity 0.15s;
+}
+
+.upload-icon-container:hover .tooltip,
+.youtube-apps-icon-container:hover .tooltip,
+.notifications-icon-container:hover .tooltip {
+    opacity: 1;
+}
